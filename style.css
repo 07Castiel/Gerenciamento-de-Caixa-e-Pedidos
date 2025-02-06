@@ -1,0 +1,167 @@
+/* Estilização básica */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 145, 0, 0.678);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Seção de entrada de pedidos */
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section label {
+  font-weight: bold;
+}
+
+.input-section select,
+.input-section input,
+.input-section button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-section button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Botões gerais */
+button {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+.mesa.pendente {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Mesas */
+.mesas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.mesa {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: rgba(255, 0, 0, 0.712);
+}
+
+.mesa.com-pedidos {
+  background-color: rgba(0, 128, 0, 0.733) !important;
+}
+
+.mesa.pendente {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+
+.mesa h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.mesa p {
+  margin: 5px 0;
+}
+
+/* Botão de exportação */
+.export-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.export-btn:hover {
+  background-color: #218838;
+}
+
+/* Botão de limpar dados */
+#limpar-dados {
+  background-color: #dc3545;
+  color: white;
+}
+
+#limpar-dados:hover {
+  background-color: #c82333;
+}
+
+#historico-container {
+  margin-top: 20px;
+}
+
+.nota-fiscal {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.help-btn {
+  background-color: #17a2b8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.help-btn:hover {
+  background-color: #138496;
+}
